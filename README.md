@@ -1,0 +1,1 @@
+# rabbitmq-exchange-types-demo
