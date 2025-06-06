@@ -2,7 +2,6 @@ import "dotenv/config";
 import amqplib from "amqplib";
 import readline from "readline/promises";
 import { stdin as input, stdout as output } from "node:process";
-import { read } from "node:fs";
 
 const AMQP_URI = process.env.CLOUDAMQP_URI;
 
