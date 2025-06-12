@@ -10,7 +10,8 @@ This repository contains implementations of various RabbitMQ exchange types, dem
 | Fanout Exchange | [Producer](nodejs/FanoutExchange/FanoutExchange.Producer/main.js) | [Consumer](nodejs/FanoutExchange/FanoutExchange.Consumer/main.js) | [Producer](c-sharp/RabbitMQExchangeTypes/FanoutExchange.Producer/Program.cs) | [Consumer](c-sharp/RabbitMQExchangeTypes/FanoutExchange.Consumer/Program.cs) |
 | Topic Exchange | [Producer](nodejs/TopicExchange/TopicExchange.Producer/main.js) | [Consumer](nodejs/TopicExchange/TopicExchange.Consumer/main.js) | [Producer](c-sharp/RabbitMQExchangeTypes/TopicExchange.Producer/Program.cs) | [Consumer](c-sharp/RabbitMQExchangeTypes/TopicExchange.Consumer/Program.cs) |
 | Headers Exchange | [Producer](nodejs/HeaderExchange/HeaderExchange.Producer/main.js) | [Consumer](nodejs/HeaderExchange/HeaderExchange.Consumer/main.js) | [Producer](c-sharp/RabbitMQExchangeTypes/HeaderExchange.Producer/Program.cs) | [Consumer](c-sharp/RabbitMQExchangeTypes/HeaderExchange.Consumer/Program.cs) |
-| DeadLetter Exchange | [Producer](nodejs/DeadLetterExchange/DeadLetterExchange.Producer/main.js) | [Consumer](nodejs/DeadLetterExchange/DeadLetterExchance.Consumer/main.js) | [Producer](c-sharp/RabbitMQExchangeTypes/DeadLetterExchange.Producer/Program.cs) | [Consumer](c-sharp/RabbitMQExchangeTypes/DeadLetterExchange.Consumer/Program.cs) |
+| Dead Letter Exchange | [Producer](nodejs/DeadLetterExchange/DeadLetterExchange.Producer/main.js) | [Consumer](nodejs/DeadLetterExchange/DeadLetterExchance.Consumer/main.js) | [Producer](c-sharp/RabbitMQExchangeTypes/DeadLetterExchange.Producer/Program.cs) | [Consumer](c-sharp/RabbitMQExchangeTypes/DeadLetterExchange.Consumer/Program.cs) |
+| Alternate Exchange | [Producer](nodejs/AlternateExchange/AlternateExchange.Producer/main.js) | [Consumer](nodejs/AlternateExchange/AlternateExchange.Consumer/main.js) | [Producer](c-sharp/RabbitMQExchangeTypes/AlternateExchange.Producer/Program.cs) | [Consumer](c-sharp/RabbitMQExchangeTypes/AlternateExchange.Consumer/Program.cs) |
 
 ## Project Structure
 
@@ -39,6 +40,12 @@ The project demonstrates several RabbitMQ exchange types:
 
 4. **Headers Exchange**
    - Routes messages based on message headers rather than routing keys
+
+5. **Dead Letter Exchange**
+   - Routes messages to a dead letter queue when they cannot be delivered to the intended queue
+
+6. **Alternate Exchange**
+   - Routes messages to an alternate exchange when they cannot be delivered to the intended exchange
 
 ## Getting Started
 
